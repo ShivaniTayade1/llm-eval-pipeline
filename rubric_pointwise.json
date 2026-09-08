@@ -1,0 +1,38 @@
+{
+  "task": "summarization_faithfulness",
+  "criteria": [
+    {
+      "name": "faithfulness",
+      "description": "Does the summary accurately reflect the source article without adding, omitting, or distorting facts?",
+      "scale": {
+        "1": "Major factual errors or fabrication",
+        "2": "Significant factual distortion",
+        "3": "Mostly accurate, minor slip",
+        "4": "Accurate, trivial imprecision",
+        "5": "Fully accurate and faithful"
+      }
+    },
+    {
+      "name": "coherence",
+      "description": "Is the summary well-organized and easy to follow?",
+      "scale": {
+        "1": "Incoherent",
+        "2": "Choppy structure",
+        "3": "Understandable but awkward",
+        "4": "Clear and well-structured",
+        "5": "Clear, logical, natural"
+      }
+    },
+    {
+      "name": "completeness",
+      "description": "Does the summary capture the key points without missing anything important?",
+      "scale": {
+        "1": "Misses most key points",
+        "2": "Misses a major point",
+        "3": "Captures main points, some detail missing",
+        "4": "Captures nearly all points",
+        "5": "Captures all key points"
+      }
+    }
+  ]
+}
